@@ -1,0 +1,11 @@
+{
+  "item.firstmod.magic": "Magic",
+  "item.firstmod.raw_magic": "Raw Magic",
+
+  "block.firstmod.magic_block": "Magic Block",
+  "block.firstmod.magic_ore": "Magic Ore",
+  "block.firstmod.deepslate_magic_ore": "Deepslate Magic Ore",
+
+
+  "itemGroup.tutorialtab": "Magic Tab"
+}
