@@ -1,7 +1,10 @@
 package net.jasper.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.jasper.firstmod.block.ModBlocks;
 import net.jasper.firstmod.item.ModItems;
+import net.jasper.firstmod.world.feature.ModConfiguredFeatures;
+import net.jasper.firstmod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,10 +28,12 @@ public class firstmod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
-        // Register the commonSetup method for modloading
+        ModPlacedFeatures.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
-
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

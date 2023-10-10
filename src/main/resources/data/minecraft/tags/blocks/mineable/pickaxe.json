@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "firstmod:magic_ore",
+    "firstmod:magic_block",
+    "firstmod:deepslate_magic_ore"
+  ]
+}
